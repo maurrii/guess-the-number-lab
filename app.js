@@ -10,7 +10,21 @@ const game = {
 			this.smallestNum
 	},
 
-  getGuess: function(){
-    prompt(`Enter a guess between ${this.smallestNum} and ${this.biggestNum}`)
-  },
+  getPlayerGuess: function(){
+    while (playerGuess !== 'quit') {
+			let playerGuess = prompt(`Enter a guess between ${this.smallestNum} and ${this.biggestNum}`) 
+			parseGuess(playerGuess)
+			let parse = parseInt(string)
+  }
+},
+
+
+parseGuess: function (string) {
+  if (isNaN(parse)) {
+    console.log("string")
+    alert(`This is not a number, Please enter a guess between ${this.smallestNum} and ${this.biggestNum}`)
+  } else {
+    console.log(parse)
+	} 
+	}
 }
