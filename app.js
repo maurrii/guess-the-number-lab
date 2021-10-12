@@ -8,9 +8,13 @@ const game = {
 		this.secretNum =
 			Math.floor(Math.random() * (this.biggestNum - this.smallestNum + 1)) +
 			this.smallestNum
+			console.log(game)
+			getPlayerGuess = prevGuesses.join; { if (playerGuess === this.secretNum)
+				render('Congrats! You guessed the number in' + prevGuesses.length + '!!') } 
+			}
 	},
 
-  getPlayerGuess: function(){
+  getPlayerGuess: function() {
     while (playerGuess !== 'quit') {
 			let playerGuess = prompt(`Enter a guess between ${this.smallestNum} and ${this.biggestNum}`) 
 			parseGuess(playerGuess)
@@ -27,4 +31,3 @@ parseGuess: function (string) {
     console.log(parse)
 	} 
 	}
-}
